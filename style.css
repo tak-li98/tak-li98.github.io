@@ -12,10 +12,11 @@
 }
 .mecaption{
     margin-left: 2em;
+    font-weight: bold;
 }
 .intro{
 	font-weight: bold;
-    transform: translateX(-14%);
+    transform: translateX(-15%);
     text-align: center;
 }
 .center{
@@ -109,25 +110,26 @@ nav a:hover::before{
 
 }
 .sociallinks{
-    padding-top: 0px;
-    position: relative;
+    position: absolute;
+    bottom:0;
+    padding-bottom: 10px;
 }
 
 .bgimage{
-    background-image: url("Images/banner background.png");
-    background-size: 100%;
-    height: 200px;
+    background-image: url("Images/uos logo.png");
+    background-size: 45% 50%;
+    background-position: 5% 25%;
+    height: 400px;
     background-repeat: no-repeat;
-    padding-bottom: 10vmax;
     position: relative;
 }
 .box{
-    background:rgba(255,255,255,0.7);
+    background:GoldenRod;
+    background-position: 10% 10%;
     width: 50%;
-    height:100%;
+    height:75px;
     text-align: justify;
-    transform: translateX(0%);
-    transform:translateY(25%);
+    transform:translateY(435%);
 
 }
 .aInfo{
