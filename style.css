@@ -18,7 +18,12 @@
     transform: translateX(-14%);
     text-align: center;
 }
-
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3em;
+}
 em{
 	color: red;
 	font-style: normal;
@@ -99,9 +104,8 @@ nav a:hover::before{
     margin-right:10px;
 }
 .UoS{
-    height:100px;
-    float: right;
-    margin-right:50%;
+    height:50%;
+    transform: translateX(50%);
 
 }
 .sociallinks{
@@ -115,15 +119,25 @@ nav a:hover::before{
     height: 200px;
     background-repeat: no-repeat;
     padding-bottom: 10vmax;
+    position: relative;
 }
 .box{
     background:rgba(255,255,255,0.7);
     width: 50%;
+    height:100%;
     text-align: justify;
-    transform: translateX(50%);
+    transform: translateX(0%);
+    transform:translateY(25%);
 
 }
 .aInfo{
     font-size: 20px;
     color: black;
+    text-align: center;
+}
+.gradvid{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 100%;
 }
