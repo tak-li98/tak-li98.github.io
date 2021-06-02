@@ -1,12 +1,24 @@
-img.mephoto {
-    		width:200px;
-    		border-radius: 10px;
-    		float: left ;
-    		margin-right: 100px;
-    	}
+.mephoto {
+    width:200px;
+    float: left ;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+.myface{
+    max-width: 100%;
+    margin-left: 2em;
+    margin-top: -2em;
+    float:left;
+}
+.mecaption{
+    margin-left: 2em;
+}
 .intro{
 	font-weight: bold;
+    transform: translateX(-14%);
+    text-align: center;
 }
+
 em{
 	color: red;
 	font-style: normal;
@@ -17,6 +29,7 @@ h1{
 }
 h2,h3,h4,h5,h6{
 	text-decoration: underline;
+    text-transform: uppercase;
 }
 .container{
     width:80%;
@@ -73,5 +86,44 @@ nav a::before{
     background-color: black;
     position: absolute;
     top:0;
+    width:0%;
+}
+nav a:hover::before{
     width:100%;
+    transition: all ease-in-out 250ms;
+}
+.social{
+    width:100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right:10px;
+}
+.UoS{
+    height:100px;
+    float: right;
+    margin-right:50%;
+
+}
+.sociallinks{
+    padding-top: 0px;
+    position: relative;
+}
+
+.bgimage{
+    background-image: url("Images/banner background.png");
+    background-size: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    padding-bottom: 10vmax;
+}
+.box{
+    background:rgba(255,255,255,0.7);
+    width: 50%;
+    text-align: justify;
+    transform: translateX(50%);
+
+}
+.aInfo{
+    font-size: 20px;
+    color: black;
 }
