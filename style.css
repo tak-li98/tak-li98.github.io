@@ -118,6 +118,9 @@ h3{
 .hobbyContainer:hover .hoverText {
     color: red;
 }
+.hobbyContainer:hover .cloudhover_btns{
+opacity:1;
+}
 .hoverText{
     position:absolute;
     top:35%;
