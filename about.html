@@ -7,6 +7,7 @@
     <meta name="author" content="Tak Li" />
     <meta name="description" content="This is a great web page" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="Javascript/javascript.js"></script>
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
@@ -17,41 +18,86 @@
     <a href="index.html">
         <img src="Images/taklogo.png" class="logo" />
     </a>
-    <h1 style="font-size:40px;">ABOUT ME!</h1>
-    <hr />
-    <h1>CAREER</h1>
-    <div class="spartadate">
-        <a>JUNE 2021 - PRESENT</a>
+    <div class="pageheader">
+        <img class="pageheader" src="Images/aboutheader.png" />
     </div>
-    <div id="spartaContainer">
-        <img src="Images/spartaglobal.png" />
-        <div class="spartaOverlay">
-            <h3 id="aboutSparta">Junior C# SDET and Developer Consultant<br /> at Sparta Global</h3>
+    
+    <!--<h1 style="font-size:40px;">ABOUT ME!</h1>-->
+    <hr />
+    <div id="bgLayer">
+        <h1>CAREER</h1>
+        <div class="spartadate">
+            <a>JUNE 2021 - <br />PRESENT</a>
+        </div>
+        <div id="spartaContainer">
+            <img src="Images/spartaglobal.png" />
+            <div class="spartaOverlay">
+                <h3 id="hoverText">Junior C# SDET and Developer Consultant<br /> at Sparta Global</h3>
+            </div>
         </div>
     </div>
     <hr style="margin-top:50px;" />
-    <h1>EDUCATION</h1>
-
-    <div id="uosContainer">
-        <div class="date">
-            <a>SEPT 2019 - SEPT 2020</a>
-        </div>
-        <img src="Images/uoslogo.png" />
-        <div class="uosOverlay">
+    
+    <div id="bgLayer">
+        <h1>EDUCATION</h1>
+        <div id="uosContainer">
+            <div class="date">
+                <a>SEPT 2019 -<br /> SEPT 2020</a>
+            </div>
+            <img id="masterimage" src="Images/uoslogo.png" />
             <h3 id="aboutMasters">MSc Space Engineering</h3>
+            <div class="detailbox">
+                <h3 id="hoverUoS" style="margin-left:25%;">Grade: Distinction </h3>
+            </div>
+            <table class="moduleTable">
+                <thead>
+                    <tr>
+                        <th>Modules</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Satellite Remote Sensing</td>
+                    </tr>
+                    <tr>
+                        <td>Space Dynamics and Missions</td>
+                    </tr>
+                    <tr>
+                        <td>Space System Design</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Guidance, Navigation and Control</td>
+                    </tr>
+                    <tr>
+                        <td>Satellite Communication Fundamentals</td>
+                    </tr>
+                    <tr>
+                        <td>Launch Vehicles & Propulsions</td>
+                    </tr>
+                    <tr>
+                        <td>Space Environment and Protection</td>
+                    </tr>
+                    <tr>
+                        <td>Spacecraft Structures and Mechanisms</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="uosContainer">
+            <div class="date">
+                <a>SEPT 2016 -<br /> JUNE 2019</a>
+            </div>
+            <img id="bengimage" src="Images/uoslogo.png" />
+            <div class="uosOverlay">
+                <h3 id="aboutMasters" style="font-size:25px;">BEng(Hons) Space Engineering</h3>
+                <div class="detailbox">
+                    <h3 id="hoverUoS" style="margin-left:35%;">Grade: 2:1</h3>
+                </div>
+            </div>
         </div>
     </div>
-    <div id="uosContainer">
-        <div class="date">
-            <a>SEPT 2016 - JUNE 2019</a>
-        </div>
-        <img src="Images/uoslogo.png" />
-        <div class="uosOverlay">
-            <h3 id="aboutMasters" style="font-size:25px;">BEng(Hons) Space Engineering</h3>
-        </div>
-    </div>
-    <footer class="footer">
-        <small>Copyright &copy; Sparta Global 2021; <cite>by Tak Li</cite></small>
-    </footer>
+        <footer class="footer">
+            <small>Copyright &copy; Sparta Global 2021; <cite>by Tak Li</cite></small>
+        </footer>
 </body>
 </html>

@@ -1,4 +1,7 @@
-function ChangeHobbyBtn(obj, before, after) {
-    obj.classList.remove(before);
-    obj.classList.add(after);
+function OpenSocietyInfo() {
+    window.alert("button works");
+}
+function DisplayDetails() {
+    var img_id = document.getElementById('masterimage');
+    img_id.classList.add('detailsbox');
 }
