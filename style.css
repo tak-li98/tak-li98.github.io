@@ -1,146 +1,227 @@
-.mephoto {
-    width:200px;
-    float: left ;
-    margin-right: 100px;
-    border-radius: 20px;
-}
-.myface{
-    max-width: 100%;
-    margin-left: 2em;
-    margin-top: -2em;
-    float:left;
-}
-.mecaption{
-    margin-left: 2em;
-    font-weight: bold;
-}
-.intro{
-	font-weight: bold;
-    transform: translateX(-15%);
-    text-align: center;
-}
-.center{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
-}
-em{
-	color: red;
-	font-style: normal;
-}
-h1{
-	text-align: center;
-	text-decoration: underline;
-}
-h2,h3,h4,h5,h6{
-	text-decoration: underline;
-    text-transform: uppercase;
-}
-.container{
-    width:80%;
-    margin:0 auto;
-}
-body{
-    margin:0;
-    background:white;
-    font-family: 'Work Sans', sans-serif;
-    font-weight:500;
-}
-header{
-    background: LightBlue;
-    
-}
-header::after{
-    content:'';
-    display:table;
-    clear:both;
+﻿body {
+    background-color: lightcyan;
+    background-image: url("Images/bg2.gif");
+    background-size:cover;
+    color: black;
+    font-family: 'Lucida Bright', Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: lighter;
 }
 .logo{
-    float:left;
-    padding:10px ;
+    position:fixed;
+    top:0;
+    padding-top:1%;
+    right:1%;
 }
-nav{
-    float:right;
-}
-nav ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-}
-nav li{
+.social_media img {
     display: inline-block;
-    margin-left:100px;
-    padding-top:40px;
-    position: relative ;
+    margin-top: 1%;
+    background-color: white;
+    border-radius: 25px;
+    height: 50px;
+    width: 50px;
 }
-nav a{
+h1 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 2px red;
+    -webkit-text-stroke: 1px black;
+}
+
+h3{
+    font-size:30px;
+}
+.container {
+    position: relative;
+    width: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left:-200px;
+    border-radius: 100px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 400px;
+    width: 400px;
+    opacity: 0;
+    border-radius: 100px;  
+    background-color: #5ef7ee;
+    border: black solid;
+}
+.container:hover .overlay {
+    opacity: 1;
+    transition: .5s ease-in-out;
+}
+.text a{
     color: black;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;   
+}
+.text a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size:20px;
 }
-nav a:hover{
-    color:white;
-
-}
-nav a::before{
-    content:'';
-    display:block;
-    height:5px;
-    width:100px;
-    background-color: black;
-    position: absolute;
-    top:0;
-    width:0%;
-}
-nav a:hover::before{
-    width:100%;
-    transition: all ease-in-out 250ms;
-}
-.social{
-    width:100px;
-    height: 100px;
-    object-fit: cover;
-    margin-right:10px;
-}
-.UoS{
-    height:50%;
-    transform: translateX(50%);
-
-}
-.sociallinks{
-    position: absolute;
-    bottom:0;
-    padding-bottom: 10px;
-}
-
-.bgimage{
-    background-image: url("Images/uos logo.png");
-    background-size: 45% 50%;
-    background-position: 5% 25%;
+.pic img{
     height: 400px;
-    background-repeat: no-repeat;
-    position: relative;
+    display:block;
+    width: 400px;
+    border-radius:100px;
+    position:relative;
+    border:black solid;
 }
-.box{
-    background:GoldenRod;
-    background-position: 10% 10%;
-    width: 50%;
-    height:75px;
-    text-align: justify;
-    transform:translateY(435%);
 
+.footer {
+    position: fixed;
+    top: 95%;
+    right: 1%;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 0.5px black;
 }
-.aInfo{
-    font-size: 20px;
-    color: black;
-    text-align: center;
-}
-.gradvid{
-    width: 50%;
+
+.cloud_btns {
+    width: 30em;
+    height: 20em;
     position: absolute;
+}
+
+.cloudhover_btns {
+    position:absolute;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    opacity:0;
+}
+.projectContainer {
+    position: relative;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    top: 20%;
+    left: 65%;
+}
+.projectContainer:hover .cloudhover_btns{
+    opacity:1;
+}
+.projectContainer:hover .hoverText{
+    color:red;
+}
+.hobbyContainer:hover .hoverText {
+    color: red;
+}
+.hoverText{
+    position:absolute;
+    top:35%;
+    left:35%;
+    text-decoration:none;
+    color:black;
+}
+.projectTableContainer{
+    position:relative;
+    top:50%;
+    left:50%;
+    width:1000px;
+    margin-left:-500px;
+}
+.hobbyContainer {
+    position: relative;
+    width: 30em;
+    height: 20em;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+table, th {
+    border: 2px solid black;
+    background-color:#ffffff;
+    text-align: left;
+    padding: 10px;
+}
+td{
+    border:1px dashed black;
+    padding:5px;
+}
+
+#spartaContainer{
+    position:relative;
+    left:50%;
+    top:50%;
+    width:500px;
+    margin-left:-250px;
+    margin-top:2%;
+}
+#spartaContainer img{
+    width:500px;
+}
+.spartaOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
     right: 0;
-    top:0;
-    height: 100%;
+    width: 500px;
+    opacity:0;
+    background-color: #5ef7ee;
+}
+
+#spartaContainer:hover .spartaOverlay{
+    opacity:1;
+    transition: 0.5s ease-in-out;
+}
+#aboutSparta{
+    position:absolute;
+    top:25%;
+    text-align:center;
+}
+.spartadate {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+    text-shadow: 2px 2px 2px red;
+    -webkit-text-stroke: 1px black;
+}
+.date {
+    position: absolute;
+    top: 50%;
+    left: -100%;
+    text-shadow:1px 1px 1px red;
+    -webkit-text-stroke: 1px black;
+}
+
+.date a {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#uosContainer {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 500px;
+    margin-left: -250px;
+    margin-top: 5%;
+    border: 5px black solid;
+    background-color:white;
+}
+#uosContainer img{
+    width:500px;
+}
+#aboutMasters {
+    position: absolute;
+    top: 70%;
+    align-content:center;
+    left:15%;
 }

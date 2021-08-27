@@ -1,35 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>About</title>
-	
+    <meta charset="utf-8" />
+    <title>My Profile</title>
+    <meta name="author" content="Tak Li" />
+    <meta name="description" content="This is a great web page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" />
 </head>
-<header>
-  	<div class="container">
-  		<a href="index.html"><img src="Images/taklogo.png" class="logo"></a>
-  		<nav>
-  			<ul>
-  				<li><a href="about.html">About me</a></li>
-  				<li><a href="mywork.html">My work</a></li>
-  				<li><a href="contactme.html">Contact me</a></li>
-  				<li><a href="blog.html">Blog</a></li>
-  			</ul>
-  		</nav>
-  	</div>
-  </header>
 <body>
-	<h2 align="center">About me</h2>
-	<div class="bgimage">
-		<div class="box">
-			<p class="aInfo">I graduated from the University of Surrey.
-			<br>-MSc Space Engineering &nbsp;&nbsp;&#8594;&nbsp; <b>Distinction</b><br>-BEng (Hons) Aerospace Engineering&nbsp;&nbsp;&#8594;&nbsp;<b>2:1</b></p>
-		</div>
-		<iframe class="gradvid" src="https://www.youtube.com/embed/EPIgmks1Xjc?controls=0&autoplay=1&mute=1&showinfo=0&loop=1&playlist=EPIgmks1Xjc" title="YouTube video player" ></iframe>
-	</div>
-	
-	
+    <div class="social_media">
+        <a href="https://www.linkedin.com/in/tak-li-4814021b1/" target="_blank"><img src="Images/linkedinlogo.png" /></a>
+        <a href="http://github.com/tak-li98" target="_blank"><img src="Images/githublogo.png" /></a>
+    </div>
+    <a href="Index.html">
+        <img src="Images/taklogo.png" class="logo" />
+    </a>
+    <h1 style="font-size:40px;">ABOUT ME!</h1>
+    <hr />
+    <h1>CAREER</h1>
+    <div class="spartadate">
+        <a>JUNE 2021 - PRESENT</a>
+    </div>
+    <div id="spartaContainer">
+        <img src="Images/spartaglobal.png" />
+        <div class="spartaOverlay">
+            <h3 id="aboutSparta">Junior C# SDET and Developer Consultant<br /> at Sparta Global</h3>
+        </div>
+    </div>
+    <hr style="margin-top:50px;" />
+    <h1>EDUCATION</h1>
+
+    <div id="uosContainer">
+        <div class="date">
+            <a>SEPT 2019 - SEPT 2020</a>
+        </div>
+        <img src="Images/uoslogo.png" />
+        <div class="uosOverlay">
+            <h3 id="aboutMasters">MSc Space Engineering</h3>
+        </div>
+    </div>
+    <div id="uosContainer">
+        <div class="date">
+            <a>SEPT 2016 - JUNE 2019</a>
+        </div>
+        <img src="Images/uoslogo.png" />
+        <div class="uosOverlay">
+            <h3 id="aboutMasters" style="font-size:25px;">BEng(Hons) Space Engineering</h3>
+        </div>
+    </div>
+    <footer class="footer">
+        <small>Copyright &copy; Sparta Global 2021; <cite>by Tak Li</cite></small>
+    </footer>
 </body>
 </html>
