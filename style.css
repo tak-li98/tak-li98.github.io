@@ -362,14 +362,33 @@ cursor:pointer;
 }
 
 #walletContainer{
-    position:relative;
+    position:absolute;
     width:800px;
     left:50%;
-    top:70%;
-
+    top:20%;
 }
 #walletContainer img {
     margin-top: 10%;
     height: 500px;
     margin-left: -450px;
+}
+#cardContainer {
+    position: absolute;
+    width: 360px;
+    top: 46%;
+    left: 50%;
+    margin-left: -370px;
+}
+#cardContainer img {
+    margin-top: 10%;
+    height: 62px; 
+}
+#hovercard{
+    opacity:0;
+}
+#cardContainer:hover #hovercard{
+    opacity:1;
+}
+#contactcard{
+    opacity:0;
 }
