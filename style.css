@@ -116,7 +116,7 @@ h3 {
 .footer {
     position: fixed;
     top: 95%;
-    right: 1%;
+    right: 0%;
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 0.5px black;
@@ -375,9 +375,9 @@ cursor:pointer;
 #cardContainer {
     position: absolute;
     width: 360px;
-    top: 46%;
+    top: 44.5%;
     left: 50%;
-    margin-left: -370px;
+    margin-left: -365px;
 }
 #cardContainer img {
     margin-top: 10%;
@@ -390,5 +390,18 @@ cursor:pointer;
     opacity:1;
 }
 #contactcard{
+    position:absolute;
+    top:55%;
+    left:35%;
     opacity:0;
+}
+
+#findout{
+    position:absolute;
+    top:25%;
+}
+
+#findout img{
+    width:450px;
+    height:200px;
 }
